@@ -1,0 +1,37 @@
+/* CustomerCarePage.css */
+.customer-care-page {
+    text-align: center;
+    padding: 20px;
+}
+
+.customer-care-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.customer-care-department {
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.customer-care-department:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.customer-care-department h2 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.customer-care-department p {
+    color: #555;
+    margin: 10px 0;
+}

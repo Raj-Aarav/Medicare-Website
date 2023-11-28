@@ -1,0 +1,28 @@
+/* PharmacyPage.css */
+.pharmacy-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .medicine-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .medicine-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+  }
+  
+  .medicine-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+
+  

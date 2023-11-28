@@ -1,0 +1,61 @@
+/* HealthHistory.css */
+h2 {
+    text-align: center;
+}
+
+/* HealthHistory.css */
+.health-history-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.health-history-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.health-history-form input,
+.health-history-form textarea,
+.health-history-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.health-history-form textarea {
+    resize: none; /* Prevent textarea from being resizable */
+  }
+
+.health-history-form input:focus,
+.health-history-form textarea:focus,
+.health-history-form select:focus {
+    border-color: #3498db;
+}
+
+.health-history-form select {
+    height: 40px;
+}
+
+.health-history-form button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.health-history-form button:hover {
+    background-color: #297fb8;
+}

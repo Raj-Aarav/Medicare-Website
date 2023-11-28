@@ -1,0 +1,106 @@
+/*CSS v2*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+.main{
+  display: grid;
+  place-items: center;
+}
+
+::selection{
+  background: #12e8f0;
+  color: #fff;
+}
+.wrapper{
+  overflow: hidden;
+  max-width: 400px;
+  background-image: linear-gradient(to right, rgb(185, 101, 198), rgb(60, 199, 204));
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.5);
+}
+.wrapper .title-text{
+  display: flex;
+  width: 200%;
+}
+
+.title-text{
+  color: rgb(7, 7, 7);
+}
+.wrapper .title{
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  
+}
+
+.wrapper .form-container{
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .form-inner{
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form{
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-inner form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.form-inner form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 17px;
+}
+.form-inner form .field input:focus{
+  /* border-color: #060606; Highlights the box when clicked */
+  border: 2px solid #060606;
+}
+.form-inner form .field input::placeholder{
+  color: #999;
+}
+form .field input:focus::placeholder{
+  color: #b3b3b3;
+}
+
+form .btn{
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+form .btn .btn-layer{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, #f4ec10, #0be696, #f4ec10, #0be696);
+  border-radius: 5px;
+}
+form .btn:hover .btn-layer{
+  left: 0;
+}
+form .btn input[type="submit"]{
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+

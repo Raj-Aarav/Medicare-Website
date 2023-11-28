@@ -1,0 +1,215 @@
+html {
+  background: linear-gradient(to right, #5d73ef, #98e4ff);
+  background-image: url(https://image.slidesdocs.com/responsive-images/background/blue-cross-medical-abstract-health-theme-blue-health-powerpoint-background_952ad55646__960_540.jpg);
+  /* background-image: url(https://t3.ftcdn.net/jpg/05/52/06/54/360_F_552065481_f2v6KugntlxzdMRitcgOh2i5PpiTtFGl.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+  /*BG will remain fixed even while scrolling*/
+}
+
+.header {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(96, 28, 113);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Navigation bar css */
+.navbar {
+  width: 100%;
+  background-color: rgb(163, 83, 163);
+  overflow: auto;
+  position: sticky;
+  top: 8px;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: rgb(7, 6, 6);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background-color: rgb(193, 195, 188);
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: rgb(176, 227, 93);
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar {
+    float: none;
+    display: block;
+  }
+}
+
+.upper-img {
+  height: 30%;
+  /* background-image: url("https://img.freepik.com/premium-vector/dna-strand-background-genetic-engineering-laboratory-research-medical-technology-science-concept_120542-398.jpg");*/
+
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdr2ML6SgE9gG8gXsquKqtTQjWSm5EBybYiQ&usqp=CAU"); */
+  background: linear-gradient(to right, #713abe, #e5cff7);
+  /* background-repeat: no-repeat; */
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.search {
+  margin-left: 20%;
+}
+
+.essential {
+  color: rgb(214, 231, 197);
+  font-size: 20px;
+  padding-top: 25px;
+  font-size: 30px;
+  padding-left: 32%;
+}
+
+.search-placeholder {
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background: white;
+  margin-left: 10%;
+  /* padding-left: 25%; */
+}
+
+#searchBar {
+  padding-left: 50px;
+  width: 85%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  /*when you click on the search bar, it does NOT show outline on click*/
+  background: transparent;
+}
+
+/*Login and signup button*/
+/* Home.css */
+.login-signup-button {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3498db;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/*Featured services*/
+.featured-services{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(166, 108, 33);
+  font-size: 40px;
+}
+
+/*CSS for the cards below the navbar*/
+.card-palete {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card-item {
+  width: 300px; 
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd; /* Added border for separation */
+}
+
+.card-item h2 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.card-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/*Misc objects*/
+.health-tips,
+.about-us,
+.social-media {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(17, 140, 241, 0.2); /*a -> bg opacity controls ; 0 to 1*/
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /*a -> shadow intensity controls ; 0 to 1*/
+}
+ /*Health tips*/
+.health-tips-points{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.health-tips-heading{
+  font-size: 30px;
+}
+
+/*About Us */
+.about-us-heading{
+  font-size: 25px;
+}
+
+.about-us-points{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.social-media a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+}
+
+/*Find us on*/
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin-left: 30%;
+  width: 40%;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background-color: rgba(17, 140, 241, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.social-media {
+  margin: 10px;
+  font-size: 20px; /* Adjust the font size as needed */
+}
+
+
